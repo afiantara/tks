@@ -88,7 +88,7 @@ def get_pdfs(url,nama,level=0):
     list_of_links=set()
     # get the url from requests get method
     try:
-        matches=['twitter']
+        matches=['twitter','facebook']
         is_exist= any(x in url for x in matches)
         if is_exist: return 
         read = requests.get(url, timeout=5)
